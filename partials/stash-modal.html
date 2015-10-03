@@ -83,9 +83,14 @@
       </div>
 
       <div ng-show="stash.expiration === 'custom'">
-        <div class="mb15" style="float:left">
+        <div class="mb15">
           <h5>Expiration date</h5>
-          <input type="text" ng-model="stash.content.to" placeholder="yyyy-mm-dd hh:mm:ss">
+          <div style="display:inline-block" />
+            <datepicker ng-model="stash.content.todate" show-weeks="false"></datepicker>
+          </div>
+          <div style="display:inline-block" />
+            <timepicker ng-model="stash.content.totime" show-meridian="false"></timepicker>
+          </div>
         </div>
       </div>
       <div style="clear:both">

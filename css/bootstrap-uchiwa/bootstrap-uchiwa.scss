@@ -1,3 +1,12 @@
 @import "variables";
 @import "../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/bootstrap";
+@import "../../bower_components/fontawesome/scss/font-awesome";
 @import "bootswatch";
+
+.glyphicon {
+  @extend .fa;
+  &.glyphicon-chevron-right { @extend .fa-chevron-right; }
+  &.glyphicon-chevron-left { @extend .fa-chevron-left; }
+  &.glyphicon-chevron-up { @extend .fa-chevron-up; }
+  &.glyphicon-chevron-down { @extend .fa-chevron-down; }
+}
